@@ -23,5 +23,8 @@ class CreateHeros < ActiveRecord::Migration
 
       t.timestamps
     end
+    
+    add_index :heros, :user_id
+    add_index :heros, :created_at
   end
 end
