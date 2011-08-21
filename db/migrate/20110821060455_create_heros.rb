@@ -26,5 +26,6 @@ class CreateHeros < ActiveRecord::Migration
     
     add_index :heros, :user_id
     add_index :heros, :created_at
+    add_index :heros, :supername      :unique => true
   end
 end
