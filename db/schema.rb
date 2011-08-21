@@ -11,7 +11,31 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110821040626) do
+ActiveRecord::Schema.define(:version => 20110821060455) do
+
+  create_table "heros", :force => true do |t|
+    t.string   "supername"
+    t.integer  "like"
+    t.integer  "dislike"
+    t.string   "realname"
+    t.string   "alias"
+    t.string   "gender"
+    t.boolean  "alignment"
+    t.integer  "height"
+    t.integer  "weight"
+    t.string   "eyes"
+    t.string   "hair"
+    t.string   "race"
+    t.string   "occupation"
+    t.string   "education"
+    t.string   "language"
+    t.string   "galaxy"
+    t.string   "place_of_birth"
+    t.string   "power"
+    t.string   "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", :force => true do |t|
     t.string   "email",                                 :default => "", :null => false

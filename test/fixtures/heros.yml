@@ -1,0 +1,43 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  supername: MyString
+  like: 1
+  dislike: 1
+  realname: MyString
+  alias: MyString
+  gender: MyString
+  alignment: false
+  height: 1
+  weight: 1
+  eyes: MyString
+  hair: MyString
+  race: MyString
+  occupation: MyString
+  education: MyString
+  language: MyString
+  galaxy: MyString
+  place_of_birth: MyString
+  power: MyString
+  description: MyString
+
+two:
+  supername: MyString
+  like: 1
+  dislike: 1
+  realname: MyString
+  alias: MyString
+  gender: MyString
+  alignment: false
+  height: 1
+  weight: 1
+  eyes: MyString
+  hair: MyString
+  race: MyString
+  occupation: MyString
+  education: MyString
+  language: MyString
+  galaxy: MyString
+  place_of_birth: MyString
+  power: MyString
+  description: MyString
