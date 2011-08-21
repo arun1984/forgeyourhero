@@ -7,6 +7,7 @@ gem 'rails', '3.1.0.rc6'
 
 gem 'sqlite3'
 gem 'devise'
+gem 'will_paginate'
 
 # Gems used only for assets and not required
 # in production environments by default.

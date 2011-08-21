@@ -1,0 +1,6 @@
+<% if @heros.any? %>
+  <table summary="hero feed">
+    <%= render :partial => 'hfeed_item', :collection => @heros %>
+  </table>
+  <%= will_paginate @heros %>
+<% end %>

@@ -8,22 +8,22 @@ class Hero < ActiveRecord::Base
   belongs_to :user
   
   validates :supername,     :presence => true, :length => { :maximum => 40 }
-  validates :realname,      :presence => true, :length => { :maximum => 40 }
-  # validates :alias
-  validates :gender,        :presence => true
-  validates :alignment,     :presence => true
-  # validates :height
-  # validates :weight
-  # validates :eyes
-  # validates :hair
-  validates :race,          :presence => true, :length => { :maximum => 40 }
-  # validates :occupation
-  # validates :education
-  # validates :language
-  validates :galaxy,        :presence => true, :length => { :maximum => 40 }
-  # validates :place_of_birth
-  validates :power,         :presence => true, :length => { :maximum => 160 }
-  validates :description,   :presence => true, :length => { :maximum => 320 }
+  # validates :realname,      :presence => true, :length => { :maximum => 40 }
+  # # validates :alias
+  # validates :gender,        :presence => true
+  # validates :alignment,     :presence => true
+  # # validates :height
+  # # validates :weight
+  # # validates :eyes
+  # # validates :hair
+  # validates :race,          :presence => true, :length => { :maximum => 40 }
+  # # validates :occupation
+  # # validates :education
+  # # validates :language
+  # validates :galaxy,        :presence => true, :length => { :maximum => 40 }
+  # # validates :place_of_birth
+  # validates :power,         :presence => true, :length => { :maximum => 160 }
+  # validates :description,   :presence => true, :length => { :maximum => 320 }
   
   validates :user_id,       :presence => true
 

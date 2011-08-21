@@ -1,0 +1,9 @@
+<h1>Hero#index</h1>
+<% if user_signed_in? %>
+<%= current_user.email %>
+<%= current_user.username %>
+<%end%>
+
+<%= render :partial => 'hfeed' %>
+
+<p>Find me in app/views/hero/index.html.erb</p>

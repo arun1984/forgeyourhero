@@ -1,8 +1,9 @@
 Forgeyourhero::Application.routes.draw do
   devise_for :users
-
+  
+  resources :heros
   #get "hero/index"
-  root :to => "hero#index"
+  root :to => "heros#index"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

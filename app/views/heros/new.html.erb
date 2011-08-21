@@ -1,0 +1,8 @@
+<h2>Create Hero</h2>
+
+<%= form_for(@hero) do |f| %>
+  <p><%= f.label :supername %><br />
+  <%= f.text_field :supername %></p>
+
+  <p><%= f.submit "Create" %></p>
+<% end %>
