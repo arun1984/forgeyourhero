@@ -6,8 +6,12 @@ gem 'rails', '3.1.0.rc6'
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
+
 gem 'devise'
 gem 'will_paginate'
+
+#linux issue gem
+gem 'therubyracer'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -31,6 +35,11 @@ gem 'jquery-rails'
 group :test do
   # Pretty printed test output
   gem 'turn', :require => false
+
+  gem 'rspec-rails'
+  gem 'webrat'
 end
 
-gem 'therubyracer'
+group :development do
+  gem 'rspec-rails'
+end
