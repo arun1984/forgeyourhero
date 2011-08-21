@@ -42,4 +42,5 @@ end
 
 group :development do
   gem 'rspec-rails'
+	gem 'spork'
 end
