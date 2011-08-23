@@ -45,4 +45,6 @@ gem 'rspec-rails'
 gem 'webrat'
 gem 'spork'
 gem 'factory_girl_rails'
+gem 'capybara'
+gem 'guard-rspec'
 end
