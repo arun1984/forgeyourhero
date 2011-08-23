@@ -41,6 +41,8 @@ group :test do
 end
 
 group :development do
-  gem 'rspec-rails'
-	gem 'spork'
+gem 'rspec-rails'
+gem 'webrat'
+gem 'spork'
+gem 'factory_girl_rails'
 end
