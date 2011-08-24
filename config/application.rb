@@ -11,6 +11,13 @@ end
 
 module Forgeyourhero
   class Application < Rails::Application
+    
+    # private
+    #   # Overwriting the devise's sign_out redirect path method
+    #   def after_sign_out_path_for(resource_or_scope)
+    #     pages_home_path
+    #   end
+    
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.

@@ -1,9 +1,18 @@
 Forgeyourhero::Application.routes.draw do
+
+  get "pages/home"
+  get "pages/contact"
+  get "pages/about"
+  get "pages/help"
+
   devise_for :users
-  
-  resources :heros
+  namespace :user do
+    root :to => "heros#home"
+  end
+
+  resources :heros,      :only => [:new, :create, :destroy, :home, :show]
   #get "hero/index"
-  root :to => "heros#index"
+  root :to => "pages#home"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

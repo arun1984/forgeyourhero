@@ -1,0 +1,16 @@
+<h1>Hero#home</h1>
+<% if user_signed_in? %>
+	<%= current_user.email %>
+<%end%>
+
+<table class="zebra-striped">
+  <thead>
+    <tr>
+      <th>SuperHeros</th>
+    </tr>
+  </thead>
+	<%= render :partial => 'hfeed' %>
+</table>
+
+
+<p>Find me in app/views/hero/home.html.erb</p>

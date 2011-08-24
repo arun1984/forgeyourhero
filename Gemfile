@@ -9,6 +9,7 @@ gem 'sqlite3'
 
 gem 'devise'
 gem 'will_paginate'
+gem 'twitter-bootstrap-rails'
 
 #linux issue gem
 gem 'therubyracer'

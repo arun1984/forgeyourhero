@@ -1,0 +1,35 @@
+<header>
+	<div class="topbar-wrapper" style="z-index: 5;">
+	    <div class="topbar">
+	      <div class="fill">
+	        <div class="container">
+	          <h3><a href="#">forgeyourhero</a></h3>
+	          <ul>
+	            <li class="active">
+							<% if user_signed_in? %>
+								<%= link_to "home", user_root_path %>
+							<% else %>
+								<%= link_to "home", pages_home_path %>
+							<% end %>
+							</li>
+	            <li><%= link_to "about", pages_about_path %></li>
+	            <li><%= link_to "contact", pages_contact_path %></li>
+	            <li><%= link_to "help", pages_help_path %></li>
+	          </ul>
+	          <form action="">
+	            <input type="text" placeholder="search" />
+	          </form>
+						<ul class="nav secondary-nav">
+							<% if user_signed_in? %>
+								<% logout_text = "(" + current_user.username + ") logout" %>
+			          <li><%= link_to logout_text, destroy_user_session_path, :method => :delete %></li>
+							<% else%>
+								<li><%= link_to "login", new_user_session_path %></li>
+								<li><%= link_to "Sign up", new_user_registration_path %></li>
+							<% end %>
+						</ul>
+	        </div>
+	      </div> <!-- /fill -->
+	    </div> <!-- /topbar -->
+	  </div> <!-- topbar-wrapper -->
+</header>
