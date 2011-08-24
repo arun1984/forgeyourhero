@@ -16,12 +16,16 @@ class HerosController < ApplicationController
   end
   
   def create
-    @hero = current_user.heros.build(params[:hero])
-    if @hero.save
-      redirect_to root_path, :flash => { :success => "Hero created!" }
+    if signed_in?
+      @hero = current_user.heros.build(params[:hero])
+      if @hero.save
+        redirect_to user_root_path, :flash => { :success => "Hero created!" }
+      else
+        flash[:success] = "Hero creation failed!"
+      end
     else
-      flash[:success] = "Hero creation failed!"
-    end    
+      redirect_to root_path
+    end
   end
 
   def destroy
