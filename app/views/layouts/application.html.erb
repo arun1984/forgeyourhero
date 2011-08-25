@@ -8,8 +8,10 @@
     <%= javascript_include_tag "application" %>
   </head>
   <body>
-      <%= render 'layouts/header' %>
-
+			<section id="app-header">
+      	<%= render 'layouts/header' %>
+			</section>
+			
 			<section id="layouts">
 			  <div class="page-header">
 			  </div>
@@ -21,27 +23,33 @@
 				</div> <!-- /row -->
 				
 			  <div class="row">
-			    <div class="span4 columns">
+			    <div class="span2 columns">
 						<br/><br/>
 			    </div>
-			    <div class="span12 columns">
-			      <div class="mini-layout">
-			        <div class="mini-layout-body"></div>
+			    <div class="span16 columns">
+			      <div class="mini-layout" id="app-mini-layout">
+			        <!-- <div class="mini-layout-body"> -->
+				
+					      <section  id="flash-messages">
+					        <% flash.each do |key, value| %>
+					          <div class="flash <%= key %>"><%= value %></div>
+					        <% end %>
+					      </section>
+								<section id="yield">
+									<%= yield %>
+								</section>
+								
+			       <!-- </div> -->
 			      </div>
-
-			      <section>
-			        <% flash.each do |key, value| %>
-			          <div class="flash <%= key %>"><%= value %></div>
-			        <% end %>
-			        <%= yield %>
-			      </section>
-			
 			    </div>
 			  </div> <!-- /row -->
 
- 			</section>
+			<section id="app-footer">
+      	<%= render 'layouts/footer' %>
+			</section>
 
-      <%= render 'layouts/footer' %>
+ 			</section> <!-- layouts -->
+
       <%= debug(params) if Rails.env.development? %>
   </body>
 </html>

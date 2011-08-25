@@ -6,3 +6,22 @@
  *= require_tree .
  *= require bootstrap-1.0.0
 */
+
+
+
+div.mini-layout div {
+    border-radius: 3px 3px 3px 3px;
+}
+
+div.mini-layout div.mini-layout-body {
+    background-color: #DCEAF4;
+    margin: 0 auto;
+}
+
+div#app-mini-layout{
+    height: 600px;
+}
+
+div#footer-mini-layout{
+    height: 50px;
+}

@@ -1,16 +1,41 @@
-<h1>Hero#home</h1>
-<% if user_signed_in? %>
-	<%= current_user.email %>
-<%end%>
+<h1>hero#home</h1>
 
-<table class="zebra-striped">
-  <thead>
-    <tr>
-      <th>SuperHeros</th>
-    </tr>
-  </thead>
-	<%= render :partial => 'hfeed' %>
-</table>
+<div class="span12 columns" id="hero-home-span12-columns">
+	<div class="mini-layout fluid" id="hero-home-mini-layout-fluid">
+		<div class="mini-layout-sidebar" id="hero-home-mini-layout-sidebar">
+			<table>
+				<tr><td>
+				<%= link_to "hero-feed", 		user_root_path, :class => "btn large primary disabled",
+																										:id 	 => "hero-btn-hero-feed"
+				%>
+				</td></tr>
+				<tr><td>
+				<%= link_to "my-heros", 		user_root_path, :class => "btn large disabled",
+																										:id 	 => "hero-btn-my-heros"
+				%>
+				</td></tr>
+				<tr><td>
+				<%= link_to "forge-hero", 	user_root_path, :class => "btn large disabled",
+																										:id 	 => "hero-btn-forge-hero"
+				%>
+				</td></tr>
+				<tr><td>
+				<%= link_to "delete-hero", 	user_root_path, :class => "btn large disabled",
+																										:id 	 => "hero-btn-delete-hero"
+				%>
+				</td></tr>
+				<tr><td>
+				<%= link_to "edit-hero", 		user_root_path, :class => "btn large disabled",
+																										:id 	 => "hero-btn-edit-hero"
+				%>
+				</td></tr>
+			</table>
+		</div>
+		<div class="mini-layout-body" id="hero-home-mini-layout-body">
+			<h1>SuperHeros</h1>
+			<%= render :partial => 'hfeed' %>
+		</div>
+		</div>
+	</div>
+</div>
 
-
-<p>Find me in app/views/hero/home.html.erb</p>
