@@ -2,70 +2,64 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-#hero-btn-hero-feed, #hero-btn-my-heros, 
-#hero-btn-forge-hero, #hero-btn-delete-hero, 
-#hero-btn-edit-hero {
-	width: 125px;
-}
-
 div#hero-home-span12-columns {
 	width: 876px;
 }
 
-div#hero-home-mini-layout-fluid {
-	height: 470px;
-}
+//div#hero-home-mini-layout-fluid {
+//	height: 470px;
+//}
 
 div#hero-home-mini-layout-sidebar {
+//	position:absolute;
+	background-color: #BBD8E9;
 	width: 176px;
 	height: 470px;
+	border-radius: 3px 3px 3px 3px;
+	
+	#hero-home-mini-layout-sidebar-ul{
+		position:absolute;
+		list-style-type:none;
+		li a{
+			width: 135px;
+			margin: 4px 1px 1px -20px;		
+		}
+	}
 }
 
 div#hero-home-mini-layout-body {
+	position:absolute;
 	width: 669px;
 	height: 470px;
+	background-color: #DCEAF4;
+	margin: -215px 0px 0px 135px;
+	border-radius: 3px 3px 3px 3px;
 }
-
 
 #hero-feed-alert-message-block-message-info {
 	width: 600px;
 }
 
+//div.mini-layout div.mini-layout-body {
+//    background-color: #DCEAF4;
+//    height: 340px;
+//    margin: 0 auto;
+//    width: 450px;
+//}
 
-// common
-div.mini-layout div {
-    border-radius: 3px 3px 3px 3px;
-}
+//div.mini-layout.fluid div.mini-layout-sidebar, 
+//div.mini-layout.fluid div.mini-layout-header, 
+//div.mini-layout.fluid div.mini-layout-body {
+//    float: left;
+//}
 
-div.mini-layout div.mini-layout-body {
-    background-color: #DCEAF4;
-    height: 340px;
-    margin: 0 auto;
-    width: 450px;
-}
-	
-div.mini-layout {
-    border: 1px solid #CCCCCC;
-    border-radius: 6px 6px 6px 6px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.125);
-    height: 340px;
-    margin-bottom: 20px;
-    padding: 9px;
-}
+//div.mini-layout.fluid div.mini-layout-sidebar {
+//    background-color: #BBD8E9;
+//    height: 340px;
+//    width: 90px;
+//}
 
-div.mini-layout.fluid div.mini-layout-sidebar, 
-div.mini-layout.fluid div.mini-layout-header, 
-div.mini-layout.fluid div.mini-layout-body {
-    float: left;
-}
-
-div.mini-layout.fluid div.mini-layout-sidebar {
-    background-color: #BBD8E9;
-    height: 340px;
-    width: 90px;
-}
-
-div.mini-layout.fluid div.mini-layout-body {
-    margin-left: 10px;
-    width: 400px;
-}
+//div.mini-layout.fluid div.mini-layout-body {
+//    margin-left: 10px;
+//    width: 400px;
+//}

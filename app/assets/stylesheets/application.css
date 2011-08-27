@@ -7,21 +7,32 @@
  *= require bootstrap-1.0.0
 */
 
-
-
-div.mini-layout div {
+/*div.mini-layout div {
     border-radius: 3px 3px 3px 3px;
-}
+}*/
 
+/*
 div.mini-layout div.mini-layout-body {
     background-color: #DCEAF4;
     margin: 0 auto;
-}
+}*/
 
 div#app-mini-layout{
+/*		position:absolute;*/
     height: 600px;
+    border: 1px solid #CCCCCC;
+    border-radius: 6px 6px 6px 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.125);
+    margin-bottom: 20px;
+    padding: 9px;
 }
 
 div#footer-mini-layout{
+/*		position:absolute;*/
     height: 50px;
+    border: 1px solid #CCCCCC;
+    border-radius: 6px 6px 6px 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.125);
+    margin-bottom: 20px;
+		border-radius: 6px 6px 6px 6px;
 }
