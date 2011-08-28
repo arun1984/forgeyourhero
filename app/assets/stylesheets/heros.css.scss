@@ -10,31 +10,42 @@ div#hero-home-span12-columns {
 //	height: 470px;
 //}
 
-div#hero-home-mini-layout-sidebar {
+div#hero-home-main-layout-body {
 //	position:absolute;
-	background-color: #BBD8E9;
-	width: 176px;
+//	background-color: #BBD8E9;
+	width: 878px;
 	height: 470px;
 	border-radius: 3px 3px 3px 3px;
 	
-	#hero-home-mini-layout-sidebar-ul{
-		position:absolute;
+	#hero-home-main-layout-body-tabs-ul {
 		list-style-type:none;
-		li a{
+		width: 176px;
+		height: 200px;
+		li a {
 			width: 135px;
 			margin: 4px 1px 1px -20px;		
 		}
 	}
 }
 
-div#hero-home-mini-layout-body {
-	position:absolute;
+div#hero-home-main-layout-body-tabs-div {
+//	position:absolute;
 	width: 669px;
 	height: 470px;
 	background-color: #DCEAF4;
-	margin: -215px 0px 0px 135px;
+	margin: -215px 0px 0px 200px;
 	border-radius: 3px 3px 3px 3px;
 }
+
+// for easy tabs
+//.hero-home-mini-layout-body-class {
+//	position:absolute;
+//	width: 669px;
+//	height: 470px;
+//	background-color: #DCEAF4;
+//	margin: -215px 0px 0px 135px;
+//	border-radius: 3px 3px 3px 3px;
+//}
 
 #hero-feed-alert-message-block-message-info {
 	width: 600px;

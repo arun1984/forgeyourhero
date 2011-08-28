@@ -1,49 +1,46 @@
 <h1>hero#home</h1>
 
-<div class="span12 columns" id="hero-home-span12-columns">
-	<!-- <div class="mini-layout fluid" id="hero-home-mini-layout-fluid"> -->
-		<div class="mini-layout-sidebar" id="hero-home-mini-layout-sidebar">
-				<ul id="hero-home-mini-layout-sidebar-ul">
-				<li>
-					<a href="#hero-btn-hero-feed" class="btn large primary">hero-feed</a>
-				</li>				
-				<li>
-					<a href="#hero-btn-my-heros" class="btn large">my-heros</a>
-				</li>
-				<li>
-					<a href="#hero-btn-forge-hero" class="btn large">forge-hero</a>
-				</li>
-				<li>
-					<a href="#hero-btn-delete-hero" class="btn large">delete-hero</a>
-				</li>
-				<li>
-					<a href="#hero-btn-edit-hero" class="btn large">edit-hero</a>
-				</li>
-			<ul>
-		
-			<div class="mini-layout-body" id="hero-home-mini-layout-body">
-				<div id = "hero-btn-hero-feed">
-					<%= render :partial => 'hero_feed' %>
-				</div>
-		
-				<div id = "hero-btn-my-heros">
-					<%= render :partial => 'my_heros' %>		
-				</div>
-		
-				<div id = "hero-btn-forge-hero">
-					<%= render :partial => 'forge_hero' %>	
-				</div>
-		
-				<div id = "hero-btn-delete-hero">
-					<%= render :partial => 'delete_hero' %>	
-				</div>
-		
-				<div id = "hero-btn-edit-hero">
-					<%= render :partial => 'edit_hero' %>	
-				</div>
+<!-- <div class="span12 columns" id="hero-home-span12-columns"> -->
+	<div class="mini-layout-body" id="hero-home-main-layout-body">
+		<ul id="hero-home-main-layout-body-tabs-ul">
+			<li id="hero-btn-hero-feed-default-li">
+				<a href="#hero-btn-hero-feed" class="btn large primary">hero-feed</a>
+			</li>
+			<li>
+				<a href="#hero-btn-my-heros" class="btn large">my-heros</a>
+			</li>
+			<li>
+				<a href="#hero-btn-forge-hero" class="btn large">forge-hero</a>
+			</li>
+			<li>
+				<a href="#hero-btn-delete-hero" class="btn large">delete-hero</a>
+			</li>
+			<li>
+				<a href="#hero-btn-edit-hero" class="btn large">edit-hero</a>
+			</li>
+		</ul>
+	
+		<div class="mini-layout-body" id="hero-home-main-layout-body-tabs-div">
+			<div id = "hero-btn-hero-feed">
+				<%= render :partial => 'hero_feed' %>
 			</div>
-		</div>
-		
-	<!-- </div> -->
-</div>
+	
+			<div id = "hero-btn-my-heros">
+				<%= render :partial => 'my_heros' %>		
+			</div>
+	
+			<div id = "hero-btn-forge-hero">
+				<%= render :partial => 'forge_hero' %>	
+			</div>
+	
+			<div id = "hero-btn-delete-hero">
+				<%= render :partial => 'delete_hero' %>	
+			</div>
+	
+			<div id = "hero-btn-edit-hero">
+				<%= render :partial => 'edit_hero' %>	
+			</div>
+		</div>		
+	</div>
+<!-- </div> -->
 

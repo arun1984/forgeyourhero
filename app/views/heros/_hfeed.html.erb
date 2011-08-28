@@ -1,7 +1,8 @@
 <% if @heros_feed_items.any? %>
-	<table>
-		<%= render :partial => 'hfeed_item', :collection => @heros_feed_items %>
-	</table>
-<%= will_paginate @heros_feed_items %>
+	<!-- <table> -->
+		<%#= render :partial => 'hfeed_item', :collection => @heros_feed_items %>
+		<%= @heros_feed_items.all %>
+	<!-- </table> -->
+<%# will_paginate @heros_feed_items %>
   
 <% end %>
