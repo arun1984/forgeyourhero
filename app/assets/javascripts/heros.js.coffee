@@ -4,10 +4,11 @@
 
 jQuery ->
 	$("#hero-home-main-layout-body" ).easytabs({
-		transitionIn: 'fadeIn',
-		transitionOut: 'fadeOut'		
+		# tabActiveClass: "> ul > li > a { btn large primary }"
+		# defaultTab: "> ul > li#hero-btn-hero-feed-default-li"
 	});
-	$('#hero-home-main-layout-body').easytabs('select', '#hero-btn-hero-feed');
+	
+	# $('#hero-home-main-layout-body').easytabs('select', '#hero-btn-hero-feed');
 	
 	# $( "#hero-home-main-layout-body" ).easytabs({
 	# 	  animate: false,

@@ -6,35 +6,31 @@ div#hero-home-span12-columns {
 	width: 876px;
 }
 
-//div#hero-home-mini-layout-fluid {
-//	height: 470px;
-//}
-
 div#hero-home-main-layout-body {
-//	position:absolute;
-//	background-color: #BBD8E9;
 	width: 878px;
-	height: 470px;
+	height: auto;
 	border-radius: 3px 3px 3px 3px;
 	
 	#hero-home-main-layout-body-tabs-ul {
 		list-style-type:none;
 		width: 176px;
-		height: 200px;
+		height: auto;
 		li a {
 			width: 135px;
 			margin: 4px 1px 1px -20px;		
 		}
 	}
-}
-
-div#hero-home-main-layout-body-tabs-div {
-//	position:absolute;
-	width: 669px;
-	height: 470px;
-	background-color: #DCEAF4;
-	margin: -215px 0px 0px 200px;
-	border-radius: 3px 3px 3px 3px;
+	
+	div#hero-home-main-layout-body-tabs-div {
+		position:relative;
+		width: 669px;
+		height: auto;
+		background-color: #DCEAF4;
+//		margin: -230px 0px 0px 200px;
+		bottom:230px;
+		left:200px;
+		border-radius: 3px 3px 3px 3px;
+	}
 }
 
 // for easy tabs
@@ -47,9 +43,9 @@ div#hero-home-main-layout-body-tabs-div {
 //	border-radius: 3px 3px 3px 3px;
 //}
 
-#hero-feed-alert-message-block-message-info {
-	width: 600px;
-}
+//#hero-feed-alert-message-block-message-info {
+//	width: 600px;
+//}
 
 //div.mini-layout div.mini-layout-body {
 //    background-color: #DCEAF4;
